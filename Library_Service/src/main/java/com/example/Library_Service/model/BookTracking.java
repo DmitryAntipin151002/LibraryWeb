@@ -1,6 +1,5 @@
 package com.example.Library_Service.model;
 
-import com.example.Library.model.Book;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -25,8 +24,5 @@ public class BookTracking {
     @Column(name = "return_by")
     private LocalDateTime returnBy;
 
-    // Связь с таблицей books (ManyToOne)
-    @ManyToOne
-    @JoinColumn(name = "book_id", referencedColumnName = "book_id", insertable = false, updatable = false)
-    private Book book;
+
 }

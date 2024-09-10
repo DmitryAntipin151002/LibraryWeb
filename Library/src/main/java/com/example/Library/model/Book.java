@@ -1,12 +1,9 @@
 package com.example.Library.model;
 
-
-import com.example.Library_Service.model.BookTracking;
 import jakarta.persistence.*;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
 
 @Entity
 @Table(name = "books", schema = "public")
@@ -38,9 +35,8 @@ public class Book {
     @JoinColumn(name = "author_id", referencedColumnName = "author_id", insertable = false, updatable = false)
     private Authors authors;
 
-    // Связь с таблицей book_tracking (OneToMany)
-    @OneToMany(mappedBy = "book")
-    private List<BookTracking> bookTrackings;
+
 }
+
 
 

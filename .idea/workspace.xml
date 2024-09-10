@@ -7,7 +7,10 @@
     <list default="true" id="e0b558d8-6b72-497f-a08c-2ca8a0ad3017" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Library/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/example/Library/model/Authors.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/com/example/Library/model/Authors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/example/Library/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/com/example/Library/model/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library_Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Library_Service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library_Service/src/main/java/com/example/Library_Service/model/BookTracking.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library_Service/src/main/java/com/example/Library_Service/model/BookTracking.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +46,7 @@
     "Maven.Eureka-Server [clean,compile,package].executor": "Run",
     "Maven.Library [clean,compile,package,install].executor": "Run",
     "Maven.Library [clean,compile,package].executor": "Run",
+    "Maven.Library [clean,package,install].executor": "Run",
     "Maven.Library [site].executor": "Run",
     "Maven.Library_Service [clean,compile,install].executor": "Run",
     "Maven.Library_Service [clean,compile,package].executor": "Run",
@@ -81,7 +85,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.LibraryServiceApplication">
+  <component name="RunManager" selected="Spring Boot.LibraryApplication">
     <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="Eureka-Server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.eurekaserver.EurekaServerApplication" />
@@ -139,7 +143,7 @@
       <option name="presentableId" value="Default" />
       <updated>1725915369659</updated>
       <workItem from="1725915373186" duration="1152000" />
-      <workItem from="1725947479609" duration="8872000" />
+      <workItem from="1725947479609" duration="12444000" />
     </task>
     <servers />
   </component>
