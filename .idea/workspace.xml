@@ -5,21 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0b558d8-6b72-497f-a08c-2ca8a0ad3017" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Library/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library_Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Library_Service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library_Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Library_Service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library_UI/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Library_UI/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library_UI/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Library_UI/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -31,6 +31,9 @@
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="2lqlDYsDSX4DQbo3VSssq4h5PCe" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -136,7 +139,7 @@
       <option name="presentableId" value="Default" />
       <updated>1725915369659</updated>
       <workItem from="1725915373186" duration="1152000" />
-      <workItem from="1725947479609" duration="2229000" />
+      <workItem from="1725947479609" duration="8872000" />
     </task>
     <servers />
   </component>
