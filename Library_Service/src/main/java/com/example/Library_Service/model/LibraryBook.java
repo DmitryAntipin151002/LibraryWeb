@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 @Table(name = "book_tracking", schema = "public")
 @NoArgsConstructor
 @Data
-public class BookTracking {
+public class LibraryBook {
     @Id
     @Column(name = "tracking_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -23,6 +23,5 @@ public class BookTracking {
 
     @Column(name = "return_by")
     private LocalDateTime returnBy;
-
 
 }
