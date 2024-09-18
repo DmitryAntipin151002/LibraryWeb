@@ -11,11 +11,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Eureka-Server" />
         <module name="Library" />
-        <module name="Library_UI" />
         <module name="Library_Service" />
         <module name="pom" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Library_UI" target="21" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">

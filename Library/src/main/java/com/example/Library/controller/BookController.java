@@ -47,9 +47,7 @@ public class BookController {
     public ResponseEntity<Book> addBook(@RequestBody Book book) {
         Book newBook = bookService.addBook(book);
 
-        // Отправка запроса в LibraryService
-        restTemplate.postForEntity("http://localhost:8081/libraryService/addBook?bookId=" + newBook.getBookId(), null, Void.class);
-
+        restTemplate.postForEntity("http://localhost:9940/library/addBook?bookId=" + newBook.getBookId(), null, Void.class);
         return new ResponseEntity<>(newBook, HttpStatus.CREATED);
     }
 

@@ -34,7 +34,6 @@ public class Book {
     @Column(name = "author_id")
     private Integer authorId;
 
-    // Связь с таблицей authors (ManyToOne)
     @ManyToOne
     @JsonBackReference
     @JoinColumn(name = "author_id", referencedColumnName = "author_id", insertable = false, updatable = false)

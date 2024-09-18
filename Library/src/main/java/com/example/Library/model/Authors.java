@@ -1,6 +1,5 @@
 package com.example.Library.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.Data;
@@ -24,7 +23,6 @@ public class Authors {
     @Column(name = "last_name")
     private String lastName;
 
-    // Связь с таблицей books (OneToMany)
     @JsonManagedReference
     @OneToMany(mappedBy = "authors")
     private List<Book> books;

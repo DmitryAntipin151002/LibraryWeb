@@ -5,12 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e0b558d8-6b72-497f-a08c-2ca8a0ad3017" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/example/Library/config/WebConfig.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/example/Library/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/com/example/Library/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library_Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Library_Service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library_Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Library_Service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/example/Library/model/Authors.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/com/example/Library/model/Authors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/example/Library/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/Library/src/main/java/com/example/Library/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library_Service/src/main/java/com/example/Library_Service/config/WebConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library_UI/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library_UI/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library_UI/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library_UI/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library_UI/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library_UI/src/main/java/com/example/Library_UI/LibraryUiApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library_UI/src/main/java/com/example/Library_UI/controller/BookController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library_UI/src/main/resources/application.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +80,7 @@
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "22",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Github/LibraryWeb/Library_Service/src/main/java/com/example/Library_Service",
+    "last_opened_file_path": "D:/Github/LibraryWeb/Eureka-Server",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -81,6 +92,11 @@
     "project.structure.side.proportion": "0.2",
     "run.configurations.included.in.services": "true",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "oracle"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -128,13 +144,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LibraryUiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="Library_UI" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.Library_UI.LibraryUiApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.LibraryServiceApplication" />
@@ -161,7 +170,13 @@
       <workItem from="1725947479609" duration="14194000" />
       <workItem from="1725974241952" duration="8549000" />
       <workItem from="1725983662852" duration="11419000" />
-      <workItem from="1726040129100" duration="12087000" />
+      <workItem from="1726040129100" duration="12991000" />
+      <workItem from="1726077066519" duration="6047000" />
+      <workItem from="1726126148799" duration="4727000" />
+      <workItem from="1726204947380" duration="2012000" />
+      <workItem from="1726215041105" duration="889000" />
+      <workItem from="1726553804914" duration="16000" />
+      <workItem from="1726646228329" duration="1138000" />
     </task>
     <servers />
   </component>
