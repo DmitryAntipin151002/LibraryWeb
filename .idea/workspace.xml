@@ -5,59 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d413277b-6c89-4546-ac0a-8a68caa3d0c1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/LibraryWeb.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eureka-Server/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eureka-Server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eureka-Server/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eureka-Server/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eureka-Server/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eureka-Server/src/main/java/org/example/eurekaserver/EurekaServerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eureka-Server/src/main/java/org/example/eurekaserver/ServletInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eureka-Server/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eureka-Server/src/test/java/org/example/eurekaserver/EurekaServerApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/example/Library/LibraryApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/example/Library/config/AppConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/example/Library/config/WebConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/example/Library/controller/AuthorsController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/example/Library/controller/BookController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/example/Library/model/Authors.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/example/Library/model/Book.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/example/Library/repository/AuthorsRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/example/Library/repository/BookRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/example/Library/service/AuthorsService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/example/Library/service/BookService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/example/Library/service/impl/AuthorsServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/src/main/java/com/example/Library/service/impl/BookServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/src/main/resources/database/library_db.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library_Service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library_Service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library_Service/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library_Service/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library_Service/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library_Service/src/main/java/com/example/Library_Service/LibraryServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library_Service/src/main/java/com/example/Library_Service/config/AppConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library_Service/src/main/java/com/example/Library_Service/controller/LibraryController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library_Service/src/main/java/com/example/Library_Service/model/LibraryBook.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library_Service/src/main/java/com/example/Library_Service/repository/LibraryBookRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library_Service/src/main/java/com/example/Library_Service/service/LibraryService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library_Service/src/main/java/com/example/Library_Service/service/impl/LibraryServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library_Service/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom/src/main/resources/META-INF/maven/archetype.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom/src/main/resources/archetype-resources/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom/src/main/resources/archetype-resources/src/main/java/App.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom/src/main/resources/archetype-resources/src/test/java/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Library/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Library/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Library/src/main/java/com/example/Library/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Library/src/main/java/com/example/Library/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Library/src/main/java/com/example/Library/model/Authors.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Library/src/main/java/com/example/Library/model/Authors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Library/src/main/java/com/example/Library/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Library/src/main/java/com/example/Library/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Library/src/main/java/com/example/Library/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Library/src/main/java/com/example/Library/repository/BookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Library/src/main/java/com/example/Library/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Library/src/main/java/com/example/Library/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Library/src/main/java/com/example/Library/service/impl/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Library/src/main/java/com/example/Library/service/impl/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Library/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Library/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -79,6 +35,9 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2mSlKVlCG1TtxkOX9Q9CjnDo9xW" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -91,6 +50,11 @@
     "Maven.AuthService [clean,install].executor": "Run",
     "Maven.AuthService [site].executor": "Run",
     "Maven.Eureka-Server [clean,compile,package].executor": "Run",
+    "Maven.Library [clean,compile,package,site].executor": "Run",
+    "Maven.Library [clean,compile,package].executor": "Run",
+    "Maven.Library [clean,compile].executor": "Run",
+    "Maven.Library [clean].executor": "Run",
+    "Maven.Library [compile].executor": "Run",
     "Maven.LibraryWeb [clean,compile,package].executor": "Run",
     "RequestMappingsPanelOrder0": "0",
     "RequestMappingsPanelOrder1": "1",
@@ -139,7 +103,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.EurekaServerApplication">
+  <component name="RunManager" selected="Spring Boot.LibraryApplication">
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="Api-Gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.apigateway.ApiGatewayApplication" />
@@ -162,6 +126,8 @@
       </method>
     </configuration>
     <configuration name="LibraryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="22" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <module name="Library" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.Library.LibraryApplication" />
       <method v="2">
@@ -175,6 +141,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Spring Boot.ApiGatewayApplication" />
+      <item itemvalue="Spring Boot.AuthServiceApplication" />
+      <item itemvalue="Spring Boot.EurekaServerApplication" />
+      <item itemvalue="Spring Boot.LibraryApplication" />
+      <item itemvalue="Spring Boot.LibraryServiceApplication" />
+    </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -194,7 +167,10 @@
       <updated>1727077795896</updated>
       <workItem from="1727077797194" duration="4027000" />
       <workItem from="1727169934125" duration="16485000" />
-      <workItem from="1727186989464" duration="331000" />
+      <workItem from="1727186989464" duration="7799000" />
+      <workItem from="1727207248233" duration="3734000" />
+      <workItem from="1727211039327" duration="98000" />
+      <workItem from="1727249533772" duration="7118000" />
     </task>
     <servers />
   </component>

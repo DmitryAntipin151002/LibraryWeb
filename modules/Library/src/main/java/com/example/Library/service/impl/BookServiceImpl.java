@@ -1,66 +1,108 @@
 package com.example.Library.service.impl;
 
+import com.example.Library.dto.BookDTO;
+import com.example.Library.exception.BookNotFoundException;
+import com.example.Library.exception.DuplicateIsbnException;
+import com.example.Library.exception.DuplicateTitleException;
+import com.example.Library.mapper.BookMapper;
 import com.example.Library.model.Book;
-import java.util.List;
 import com.example.Library.repository.BookRepository;
 import com.example.Library.service.BookService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import java.util.Optional;
+
+import java.util.List;
 
 @Service
 @RequiredArgsConstructor
 public class BookServiceImpl implements BookService {
-
     private final BookRepository bookRepository;
+    private final BookMapper bookMapper;
+    private final LibraryServiceClientImpl libraryServiceClient;
 
     @Override
-    public List<Book> findAllBooks() {
-        return bookRepository.findAll();
+    public List<BookDTO> findAllBooks() {
+        return bookMapper.toDTOList(bookRepository.findAll());
     }
 
     @Override
-    public Book findBookById(Integer id) {
-        Optional<Book> optionalBook = bookRepository.findById(id);
-        return optionalBook.orElse(null); // Возвращает null, если книга не найдена
+    public BookDTO findBookById(Integer id) {
+        // Поиск книги по ID
+        Book book = bookRepository.findById(id)
+                .orElseThrow(() -> new BookNotFoundException("Book not found with ID: " + id));
+        return bookMapper.toDTO(book);
+    }
+    @Override
+    public BookDTO findBookByTitle(String title) {
+        // Поиск книги по названию
+        Book book = bookRepository.findByTitle(title)
+                .orElseThrow(() -> new BookNotFoundException("Book not found with title: " + title));
+        return bookMapper.toDTO(book);
     }
 
     @Override
-    public Book findBookByIsbn(String isbn) {
-        Optional<Book> optionalBook = bookRepository.findByIsbn(isbn);
-        return optionalBook.orElse(null); // Возвращает null, если книга не найдена
-    }
-
-    @Override
-    public Book addBook(Book book) {
-        return bookRepository.save(book); // Сохранение новой книги
-    }
-
-    @Override
-    public Book updateBook(Integer id, Book book) {
-        Optional<Book> optionalBook = bookRepository.findById(id);
-        if (optionalBook.isPresent()) {
-            Book existingBook = optionalBook.get();
-            // Обновляем поля существующей книги
-            existingBook.setIsbn(book.getIsbn());
-            existingBook.setTitle(book.getTitle());
-            existingBook.setGenre(book.getGenre());
-            existingBook.setDescription(book.getDescription());
-            existingBook.setAuthorId(book.getAuthorId());
-            return bookRepository.save(existingBook); // Сохранение изменений
-        } else {
-            return null; // Если книга не найдена, можно вернуть null или выбросить исключение
+    public BookDTO addBook(BookDTO bookDTO) {
+        // Проверка на существование ISBN
+        if (bookRepository.existsByIsbn(bookDTO.getIsbn())) {
+            throw new DuplicateIsbnException("ISBN already exists");
         }
+
+        // Проверка на существование книги с таким же названием
+        if (bookRepository.existsByTitle(bookDTO.getTitle())) {
+            throw new DuplicateTitleException("Book with this title already exists");
+        }
+
+        Book book = bookMapper.toEntity(bookDTO);
+        Book savedBook = bookRepository.save(book);
+
+        // Уведомление библиотечного сервиса
+        libraryServiceClient.notifyLibraryService(savedBook.getBookId());
+        return bookMapper.toDTO(savedBook);
     }
 
     @Override
-    public List<Book> findBooksByAuthor(String firstName, String lastName) {
-        return bookRepository.findByAuthorsFirstNameAndAuthorsLastName(firstName, lastName);
+    public BookDTO updateBookById(Integer id, BookDTO bookDTO) {
+        // Проверка на существование книги перед обновлением по ID
+        Book existingBook = bookRepository.findById(id)
+                .orElseThrow(() -> new BookNotFoundException("Book not found with ID: " + id));
+
+        // Обновление данных книги
+        existingBook.setIsbn(bookDTO.getIsbn());
+        existingBook.setTitle(bookDTO.getTitle());
+        existingBook.setGenre(bookDTO.getGenre());
+        existingBook.setDescription(bookDTO.getDescription());
+
+        Book updatedBook = bookRepository.save(existingBook);
+        return bookMapper.toDTO(updatedBook);
+    }
+
+    @Override
+    public BookDTO updateBookByTitle(String title, BookDTO bookDTO) {
+        // Проверка на существование книги перед обновлением по названию
+        Book existingBook = bookRepository.findByTitle(title)
+                .orElseThrow(() -> new BookNotFoundException("Book not found with title: " + title));
+
+        // Обновление данных книги
+        existingBook.setIsbn(bookDTO.getIsbn());
+        existingBook.setTitle(bookDTO.getTitle());
+        existingBook.setGenre(bookDTO.getGenre());
+        existingBook.setDescription(bookDTO.getDescription());
+
+        Book updatedBook = bookRepository.save(existingBook);
+        return bookMapper.toDTO(updatedBook);
     }
 
     @Override
     public void deleteBook(Integer id) {
-        bookRepository.deleteById(id); // Удаление книги по ID
+        if (!bookRepository.existsById(id)) {
+            throw new BookNotFoundException("Book not found with ID: " + id);
+        }
+        bookRepository.deleteById(id);
+    }
+
+    public void deleteBookByTitle(String title) {
+        Book book = bookRepository.findByTitle(title)
+                .orElseThrow(() -> new BookNotFoundException("Book not found with title: " + title));
+        bookRepository.delete(book);
     }
 }
-

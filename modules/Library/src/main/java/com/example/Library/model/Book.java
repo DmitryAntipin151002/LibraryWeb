@@ -3,6 +3,7 @@ package com.example.Library.model;
 import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -10,51 +11,48 @@ import lombok.NoArgsConstructor;
 @Entity
 @Table(name = "books", schema = "public")
 @NoArgsConstructor
+@AllArgsConstructor
 @Data
 public class Book {
     @Id
     @Column(name = "book_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @JsonIgnore
-    private Integer bookId;
+   public Integer bookId;
 
     @Column(name = "isbn")
-    private String isbn;
+   public String isbn;
 
     @Column(name = "title")
-    private String title;
+   public String title;
 
     @Column(name = "genre")
-    private String genre;
+   public String genre;
 
     @Column(name = "description")
-    private String description;
+   public String description;
 
     @JsonIgnore
     @Column(name = "author_id")
-    private Integer authorId;
+   public Integer authorId;
 
     @ManyToOne
     @JsonBackReference
     @JoinColumn(name = "author_id", referencedColumnName = "author_id", insertable = false, updatable = false)
-    private Authors authors;
+   public Authors authors;
 
+    // Геттеры для автора
     public String getAuthorFirstName() {
-       if (authors == null) {
-           return "Неизвестно";
-       }
-       else return authors.getFirstName();
+        return authors != null ? authors.getFirstName() : "Неизвестно";
     }
 
     public String getAuthorLastName() {
-       if (authors == null) {
-           return "Неизвестно";
-       }
-       else return authors.getLastName();
+        return authors != null ? authors.getLastName() : "Неизвестно";
     }
-
-
 }
+
+
+
+
 
 
 

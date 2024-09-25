@@ -2,6 +2,7 @@ package com.example.Library.model;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -9,19 +10,20 @@ import java.util.List;
 
 @Entity
 @Table(name = "authors", schema = "public")
+@AllArgsConstructor
 @NoArgsConstructor
 @Data
-public class Authors {
+    public class Authors {
     @Id
-    @Column(name = "author_id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer authorId;
+    @Column(name = "author_id")
+    public Integer authorId;
 
     @Column(name = "first_name")
-    private String firstName;
+   public String firstName;
 
     @Column(name = "last_name")
-    private String lastName;
+    public String lastName;
 
     @JsonManagedReference
     @OneToMany(mappedBy = "authors")

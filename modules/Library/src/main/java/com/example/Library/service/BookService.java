@@ -1,21 +1,17 @@
 package com.example.Library.service;
 
+import com.example.Library.dto.BookDTO;
 import com.example.Library.model.Book;
 import java.util.List;
 
 
 public interface BookService {
-    List<Book> findAllBooks();
-
-    Book findBookById(Integer id);
-
-    Book findBookByIsbn(String isbn);
-
-    Book addBook(Book book);
-
-    Book updateBook(Integer id, Book book);
-
-    public List<Book> findBooksByAuthor(String firstName, String lastName);
-
-    void deleteBook(Integer id);
+    public List<BookDTO> findAllBooks();
+    public BookDTO findBookById(Integer id);
+    public BookDTO addBook(BookDTO bookDTO);
+    public BookDTO findBookByTitle(String title);
+    public BookDTO updateBookByTitle(String title, BookDTO bookDTO);
+    BookDTO updateBookById(Integer id, BookDTO bookDTO);
+    public void deleteBook(Integer id);
+    public void deleteBookByTitle(String title);
 }

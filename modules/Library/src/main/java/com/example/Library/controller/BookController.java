@@ -1,63 +1,50 @@
 package com.example.Library.controller;
 
-import com.example.Library.model.Book;
+import com.example.Library.dto.BookDTO;
 import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
 import java.util.List;
 import com.example.Library.service.BookService;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.web.client.RestTemplate;
 
 @Data
 @RestController
 @RequestMapping("/api/books")
 public class BookController {
     private final BookService bookService;
-    @Autowired
-    private final RestTemplate restTemplate;
 
     @Autowired
-    public BookController(BookService bookService, RestTemplate restTemplate) {
+    public BookController(BookService bookService) {
         this.bookService = bookService;
-        this.restTemplate = restTemplate;
     }
 
     @GetMapping
-    public List<Book> getAllBooks() {
-        return bookService.findAllBooks();
+    public ResponseEntity<List<BookDTO>> getAllBooks() {
+        return ResponseEntity.ok(bookService.findAllBooks());
     }
 
     @GetMapping("/{id}")
-    public Book getBookById(@PathVariable Integer id) {
-        return bookService.findBookById(id);
-    }
-
-    @GetMapping("/author")
-    public List<Book> getBooksByAuthor(@RequestParam String firstName, @RequestParam String lastName) {
-        return bookService.findBooksByAuthor(firstName, lastName);
+    public ResponseEntity<BookDTO> getBookById(@PathVariable Integer id) {
+        return ResponseEntity.ok(bookService.findBookById(id));
     }
 
     @PostMapping
-    public ResponseEntity<Book> addBook(@RequestBody Book book) {
-        Book newBook = bookService.addBook(book);
-
-        restTemplate.postForEntity("http://localhost:9940/library/addBook?bookId=" + newBook.getBookId(), null, Void.class);
-        return new ResponseEntity<>(newBook, HttpStatus.CREATED);
+    public ResponseEntity<BookDTO> addBook(@RequestBody BookDTO bookDTO) {
+        return new ResponseEntity<>(bookService.addBook(bookDTO), HttpStatus.CREATED);
     }
 
     @PutMapping("/{id}")
-    public Book updateBook(@PathVariable Integer id, @RequestBody Book book) {
-        return bookService.updateBook(id, book);
+    public ResponseEntity<BookDTO> updateBook(@PathVariable Integer id, @RequestBody BookDTO bookDTO) {
+        return ResponseEntity.ok(bookService.updateBookById(id, bookDTO));
     }
 
     @DeleteMapping("/{id}")
-    public void deleteBook(@PathVariable Integer id) {
+    public ResponseEntity<Void> deleteBook(@PathVariable Integer id) {
         bookService.deleteBook(id);
+        return ResponseEntity.noContent().build();
     }
 }
+
