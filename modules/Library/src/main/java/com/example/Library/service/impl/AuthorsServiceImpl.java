@@ -30,4 +30,8 @@ public class AuthorsServiceImpl implements AuthorsService {
         }
         return null;
     }
+    @Override
+    public Optional<Authors> findById(Integer authorId) {
+        return authorsRepository.findById(authorId);
+    }
 }

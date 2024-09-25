@@ -12,6 +12,7 @@ public class BookDTO {
    public String description;      // Описание книги
    public String firstName;  // Имя автора
    public String lastName;   // Фамилия автора
+   private Integer authorId;
 
 }
 

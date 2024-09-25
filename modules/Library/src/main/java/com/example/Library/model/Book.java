@@ -48,6 +48,9 @@ public class Book {
     public String getAuthorLastName() {
         return authors != null ? authors.getLastName() : "Неизвестно";
     }
+
+    public void setAuthor(Authors author) {
+    }
 }
 
 

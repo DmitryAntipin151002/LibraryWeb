@@ -13,5 +13,4 @@ public interface BookService {
     public BookDTO updateBookByTitle(String title, BookDTO bookDTO);
     BookDTO updateBookById(Integer id, BookDTO bookDTO);
     public void deleteBook(Integer id);
-    public void deleteBookByTitle(String title);
 }

@@ -6,4 +6,7 @@ import java.util.Optional;
 
 public interface AuthorsRepository extends JpaRepository<Authors, Integer> {
     Optional<Authors> findByFirstNameAndLastName(String firstName, String lastName);
+
+    @Override
+    Optional<Authors> findById(Integer integer);
 }

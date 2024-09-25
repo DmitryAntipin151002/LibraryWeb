@@ -21,27 +21,37 @@ public class BookController {
         this.bookService = bookService;
     }
 
-    @GetMapping
+    @GetMapping("/")
     public ResponseEntity<List<BookDTO>> getAllBooks() {
         return ResponseEntity.ok(bookService.findAllBooks());
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/get/{id}")
     public ResponseEntity<BookDTO> getBookById(@PathVariable Integer id) {
         return ResponseEntity.ok(bookService.findBookById(id));
     }
 
-    @PostMapping
+    @GetMapping("/get/{title}")
+    public ResponseEntity<BookDTO> findBookByTitle(@PathVariable String title) {
+        return ResponseEntity.ok(bookService.findBookByTitle(title));
+    }
+
+    @PostMapping("/add")
     public ResponseEntity<BookDTO> addBook(@RequestBody BookDTO bookDTO) {
         return new ResponseEntity<>(bookService.addBook(bookDTO), HttpStatus.CREATED);
     }
 
-    @PutMapping("/{id}")
+    @PutMapping("/update/{id}")
     public ResponseEntity<BookDTO> updateBook(@PathVariable Integer id, @RequestBody BookDTO bookDTO) {
         return ResponseEntity.ok(bookService.updateBookById(id, bookDTO));
     }
 
-    @DeleteMapping("/{id}")
+    @PutMapping("/update/{title}")
+    public ResponseEntity<BookDTO> updateBook(@PathVariable String title, @RequestBody BookDTO bookDTO) {
+        return ResponseEntity.ok(bookService.updateBookByTitle(title, bookDTO));
+    }
+
+    @DeleteMapping("/delete/{id}")
     public ResponseEntity<Void> deleteBook(@PathVariable Integer id) {
         bookService.deleteBook(id);
         return ResponseEntity.noContent().build();
