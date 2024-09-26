@@ -23,6 +23,7 @@
       <module name="AuthService" options="-parameters" />
       <module name="Eureka-Server" options="-parameters" />
       <module name="Library" options="-parameters" />
+      <module name="LibraryWeb" options="" />
       <module name="Library_Service" options="-parameters" />
     </option>
   </component>

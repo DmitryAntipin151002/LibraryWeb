@@ -38,9 +38,9 @@ public class Book {
     @ManyToOne
     @JsonBackReference
     @JoinColumn(name = "author_id", referencedColumnName = "author_id", insertable = false, updatable = false)
-   public Authors authors;
 
-    // Геттеры для автора
+    public Authors authors;
+
     public String getAuthorFirstName() {
         return authors != null ? authors.getFirstName() : "Неизвестно";
     }
@@ -50,6 +50,7 @@ public class Book {
     }
 
     public void setAuthor(Authors author) {
+        this.authors = author;
     }
 }
 

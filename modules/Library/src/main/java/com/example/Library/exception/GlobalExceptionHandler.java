@@ -13,6 +13,26 @@ public class GlobalExceptionHandler {
         return new ResponseEntity<>(ex.getMessage(), HttpStatus.NOT_FOUND);
     }
 
+    @ExceptionHandler(AuthorNotFoundException.class)
+    public ResponseEntity<String> handleAuthorNotFoundException(AuthorNotFoundException ex) {
+        return new ResponseEntity<>(ex.getMessage(), HttpStatus.NOT_FOUND);
+    }
+
+    @ExceptionHandler(DuplicateBookIdException.class)
+    public ResponseEntity<String> handleDuplicateBookIdException(DuplicateBookIdException ex) {
+        return new ResponseEntity<>(ex.getMessage(), HttpStatus.CONFLICT);
+    }
+
+    @ExceptionHandler(DuplicateIsbnException.class)
+    public ResponseEntity<String> handleDuplicateIsbnException(DuplicateIsbnException ex) {
+        return new ResponseEntity<>(ex.getMessage(), HttpStatus.CONFLICT);
+    }
+
+    @ExceptionHandler(DuplicateTitleException.class)
+    public ResponseEntity<String> handleDuplicateTitleException(DuplicateTitleException ex) {
+        return new ResponseEntity<>(ex.getMessage(), HttpStatus.CONFLICT);
+    }
+
     @ExceptionHandler(IllegalArgumentException.class)
     public ResponseEntity<String> handleIllegalArgumentException(IllegalArgumentException ex) {
         return new ResponseEntity<>(ex.getMessage(), HttpStatus.BAD_REQUEST);

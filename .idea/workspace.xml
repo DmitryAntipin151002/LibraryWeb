@@ -5,16 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d413277b-6c89-4546-ac0a-8a68caa3d0c1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Library/src/main/java/com/example/Library/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Library/src/main/java/com/example/Library/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Library/src/main/java/com/example/Library/dto/BookDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Library/src/main/java/com/example/Library/dto/BookDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Api-Gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Api-Gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/AuthService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/modules/AuthService/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Eureka-Server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Eureka-Server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Eureka-Server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Eureka-Server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Library/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Library/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Library/src/main/java/com/example/Library/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Library/src/main/java/com/example/Library/exception/GlobalExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/Library/src/main/java/com/example/Library/mapper/BookMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Library/src/main/java/com/example/Library/mapper/BookMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/Library/src/main/java/com/example/Library/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Library/src/main/java/com/example/Library/model/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/Library/src/main/java/com/example/Library/repository/AuthorsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Library/src/main/java/com/example/Library/repository/AuthorsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Library/src/main/java/com/example/Library/service/AuthorsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Library/src/main/java/com/example/Library/service/AuthorsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Library/src/main/java/com/example/Library/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Library/src/main/java/com/example/Library/service/BookService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/Library/src/main/java/com/example/Library/service/impl/AuthorsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Library/src/main/java/com/example/Library/service/impl/AuthorsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Library/src/main/java/com/example/Library/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Library/src/main/java/com/example/Library/repository/BookRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/modules/Library/src/main/java/com/example/Library/service/impl/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Library/src/main/java/com/example/Library/service/impl/BookServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Library/src/main/java/com/example/Library/service/impl/LibraryServiceClientImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Library/src/main/java/com/example/Library/service/impl/LibraryServiceClientImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Library/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Library/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Library_Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Library_Service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Library_Service/src/main/java/com/example/Library_Service/controller/LibraryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Library_Service/src/main/java/com/example/Library_Service/controller/LibraryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Library_Service/src/main/java/com/example/Library_Service/service/LibraryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Library_Service/src/main/java/com/example/Library_Service/service/LibraryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Library_Service/src/main/java/com/example/Library_Service/service/impl/LibraryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Library_Service/src/main/java/com/example/Library_Service/service/impl/LibraryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/modules/Library_Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/modules/Library_Service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +68,9 @@
     &quot;Maven.Library [clean,compile].executor&quot;: &quot;Run&quot;,
     &quot;Maven.Library [clean].executor&quot;: &quot;Run&quot;,
     &quot;Maven.Library [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.LibraryWeb [clean,compile,package,site].executor&quot;: &quot;Run&quot;,
     &quot;Maven.LibraryWeb [clean,compile,package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.Library_Service [clean,compile,package].executor&quot;: &quot;Run&quot;,
     &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
     &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
     &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
@@ -67,7 +81,8 @@
     &quot;Spring Boot.EurekaServerApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.LibraryApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.LibraryServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;fitch&quot;,
+    &quot;Spring Boot.MicroserviceManagerApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/Github/LibraryWeb&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -75,9 +90,9 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -104,7 +119,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.LibraryApplication">
+  <component name="RunManager" selected="Spring Boot.ApiGatewayApplication">
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="Api-Gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.apigateway.ApiGatewayApplication" />
@@ -173,7 +188,10 @@
       <workItem from="1727211039327" duration="98000" />
       <workItem from="1727249533772" duration="9646000" />
       <workItem from="1727269111788" duration="1337000" />
-      <workItem from="1727276480567" duration="9656000" />
+      <workItem from="1727276480567" duration="11009000" />
+      <workItem from="1727342888010" duration="441000" />
+      <workItem from="1727344091062" duration="14444000" />
+      <workItem from="1727358640524" duration="1233000" />
     </task>
     <servers />
   </component>

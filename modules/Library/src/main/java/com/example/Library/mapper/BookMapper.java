@@ -4,7 +4,6 @@ import com.example.Library.dto.BookDTO;
 import com.example.Library.model.Book;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
-import org.mapstruct.factory.Mappers;
 
 import java.util.List;
 
@@ -17,8 +16,8 @@ public interface BookMapper {
     @Mapping(source = "title", target = "title")
     @Mapping(source = "genre", target = "genre")
     @Mapping(source = "description", target = "description")
-    @Mapping(source = "authors.firstName", target = "firstName")  // Убедитесь, что это поле правильно указано
-    @Mapping(source = "authors.lastName", target = "lastName")    // Убедитесь, что это поле правильно указано
+    @Mapping(source = "authors.firstName", target = "firstName")
+    @Mapping(source = "authors.lastName", target = "lastName")
     BookDTO toDTO(Book book);
 
     List<BookDTO> toDTOList(List<Book> books);
@@ -29,7 +28,7 @@ public interface BookMapper {
     @Mapping(source = "title", target = "title")
     @Mapping(source = "genre", target = "genre")
     @Mapping(source = "description", target = "description")
-    @Mapping(target = "authors", ignore = true)  // Игнорируем поле author, если оно не нужно
+    @Mapping(target = "authors", ignore = true)
     Book toEntity(BookDTO bookDTO);
 }
 

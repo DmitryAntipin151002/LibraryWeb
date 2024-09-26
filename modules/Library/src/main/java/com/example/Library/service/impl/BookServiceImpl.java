@@ -12,7 +12,6 @@ import com.example.Library.model.Authors;
 import com.example.Library.repository.AuthorsRepository;
 import com.example.Library.repository.BookRepository;
 import com.example.Library.service.BookService;
-import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -60,7 +59,6 @@ public class BookServiceImpl implements BookService {
         }
         // Преобразовать DTO в сущность
         Book book = bookMapper.toEntity(bookDTO);
-        // Предполагается, что Book имеет поле author, которое вы можете установить
         if (bookDTO.getAuthorId() != null) {
             Authors author = authorsRepository.findById(bookDTO.getAuthorId())
                     .orElseThrow(() -> new AuthorNotFoundException("Author not found with ID: " + bookDTO.getAuthorId()));
@@ -70,7 +68,6 @@ public class BookServiceImpl implements BookService {
 
         // Сохранить книгу
         Book savedBook = bookRepository.save(book);
-        // Уведомить библиотечный сервис
         libraryServiceClient.notifyLibraryService(savedBook.getBookId());
         return bookMapper.toDTO(savedBook);
     }

@@ -1,5 +1,6 @@
 package com.example.Library_Service.controller;
 
+import com.example.Library_Service.dto.LibraryBookDTO;
 import com.example.Library_Service.model.LibraryBook;
 import com.example.Library_Service.service.LibraryService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,25 +19,24 @@ public class LibraryController {
     private LibraryService libraryService;
 
     @PostMapping("/addBook")
-    public ResponseEntity<LibraryBook> addBook(@RequestParam Integer bookId) {
-        LibraryBook newLibraryBook = libraryService.addBook(bookId);
+    public ResponseEntity<LibraryBookDTO> addBook(@RequestParam Integer bookId) {
+        LibraryBookDTO newLibraryBook = libraryService.addBook(bookId);
         return new ResponseEntity<>(newLibraryBook, HttpStatus.CREATED);
     }
 
     @PostMapping("/borrowBook")
-    public ResponseEntity<LibraryBook> borrowBook(
-            @RequestParam Integer bookId,
-            @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) LocalDateTime borrowTime,
-            @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE_TIME) LocalDateTime returnTime) {
-
-        LibraryBook updatedLibraryBook = libraryService.borrowBook(bookId, borrowTime, returnTime);
+    public ResponseEntity<LibraryBookDTO> borrowBook(@RequestBody LibraryBookDTO libraryBookDTO) {
+        LibraryBookDTO updatedLibraryBook = libraryService.borrowBook(libraryBookDTO.getBookId(),
+                libraryBookDTO.getBorrowedAt(), libraryBookDTO.getReturnBy());
         return new ResponseEntity<>(updatedLibraryBook, HttpStatus.OK);
     }
 
+
     @GetMapping("/status/{bookId}")
-    public ResponseEntity<LibraryBook> getBookStatus(@PathVariable Integer bookId) {
-        LibraryBook libraryBook = libraryService.getBookStatus(bookId);
+    public ResponseEntity<LibraryBookDTO> getBookStatus(@PathVariable Integer bookId) {
+        LibraryBookDTO libraryBook = libraryService.getBookStatus(bookId);
         return new ResponseEntity<>(libraryBook, HttpStatus.OK);
     }
 }
+
 
